@@ -48,7 +48,7 @@ public class PostResource {
         if (followerId == null) {
             return Response
                     .status(Response.Status.BAD_REQUEST)
-                    .entity("Missing \n Header \n followerId")
+                    .entity("Missing Header followerId")
                     .build();
         }
 
@@ -57,7 +57,7 @@ public class PostResource {
         if (follower == null) {
             return Response
                     .status(Response.Status.BAD_REQUEST)
-                    .entity("Follower \n doesn't \n exists")
+                    .entity("Follower doesn't exists")
                     .build();
         }
 
